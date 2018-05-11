@@ -1,0 +1,31 @@
+<% include ./partials/header %>
+  <div class="row">
+    <div class="col s6 offset-s3">
+      <div class="box">
+        <div class="card-panel teal lighten-4 z-depth-3">
+          <h2 class="center">Edit
+            <%=blog.title%>
+          </h2>
+          <form action="/blogs/<%=blog._id%>?_method=PUT" method="POST">
+            <div class="input-field">
+              <input id="name" type="text" name="blog[title]" value="<%= blog.title %>">
+              <label for="name">Blog Title</label>
+            </div>
+            <div class="input-field">
+              <input type="text" name="blog[image]" value="<%= blog.image %>">
+              <label for="name">Image</label>
+            </div>
+            <div class="input-field">
+              <textarea name="blog[body]" class="materialize-textarea"><%= blog.body %></textarea>
+              <label for="name">Blog Content</label>
+            </div>
+            <div class="input-field">
+              <input type="submit" class="btn">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <% include ./partials/footer %>

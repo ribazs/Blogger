@@ -1,0 +1,68 @@
+<html>
+
+<head>
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import materialize.css-->
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/app.css">
+
+
+  <title>Blog App</title>
+
+
+
+</head>
+
+<body>
+
+  <div class="navbar-fixed">
+    <nav class="teal lighten-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="/" class="brand-logo">
+            <i class="material-icons large">new_releases </i> Blogger</a>
+          <a href="/" data-target="mobile-nav" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/blogs/new">New Post</a>
+            </li>
+            <li>
+              <a href="#search">Search</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <a href="/blogs/new">New Post</a>
+    </li>
+    <li>
+      <a href="#search">Search</a>
+    </li>
+  </ul>
+
+
+  <!--JavaScript at end of body for optimized loading-->
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script>
+    console.log('hi');
+    const sideNav = document.querySelector('.sidenav');
+    M.Sidenav.init(sideNav, {});
+
+  </script>
